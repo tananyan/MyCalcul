@@ -1,0 +1,105 @@
+.themain {
+  padding: 35px 0;
+  height: 100vh;
+  background-color: antiquewhite;
+  &__bg {
+    padding: 15px;
+    background-color: black;
+    height: 550px;
+    width: 300px;
+    border-radius: 15px;
+  }
+  &__h2 {
+    text-align: center;
+    font-size: 24px;
+    color: rgb(205, 50, 10);
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-rows: repeat(6, 70px);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    color: whitesmoke;
+    text-align: center;
+    &_top {
+      grid-row: 1/2;
+      grid-column: 1/5;
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+      gap: 5px;
+    }
+    &_main {
+      grid-row: 2/7;
+      grid-column: 1/5;
+      display: grid;
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+      gap: 5px;
+      align-items: center;
+    }
+  }
+
+  .grid-top-btn {
+    width: 100%;
+    height: 30px;
+    // background-color: rgb(78, 78, 78);
+    border-radius: 10px;
+    border: 2px solid black;
+    line-height: 26px;
+  }
+  .grid-main-btn {
+    width: 100%;
+    height: 60px;
+    // background-color: rgb(78, 78, 78);
+    border-radius: 15px;
+    border: 2px solid black;
+    line-height: 56px;
+    transition: 0.2s all;
+    &:hover {
+      filter: brightness(110%);
+    }
+    &:active {
+      filter: brightness(70%);
+      transform: scale(0.9);
+    }
+  }
+
+  // top
+  .top-num {
+    grid-column: span 3;
+    background-color: rgb(178, 178, 178);
+  }
+  .top-operator {
+    background-color: rgb(178, 178, 178);
+    user-select: none;
+  }
+  .top-fun {
+    background-color: rgb(205, 50, 10);
+    user-select: none;
+    &:hover {
+      filter: brightness(110%);
+    }
+    &:active {
+      filter: brightness(70%);
+      transform: scale(0.9);
+    }
+  }
+
+  // main
+  .num {
+    background-color: rgb(178, 178, 178);
+    user-select: none;
+  }
+  .fun {
+    background-color: rgb(78, 78, 78);
+    user-select: none;
+  }
+  .res {
+    background-color: rgb(205, 50, 10);
+    user-select: none;
+  }
+}

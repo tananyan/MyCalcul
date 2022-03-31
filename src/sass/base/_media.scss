@@ -1,0 +1,17 @@
+// Адаптив
+// > 992px  container{ width: 956px }
+
+//769px-992px
+@media (max-width: 992px) {
+  .container {
+    width: 752px;
+  }
+
+}
+
+//577px-768px
+@media (max-width: 768px) {
+  .container {
+    width: 308px;
+  }
+}
