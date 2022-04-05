@@ -1,9 +1,10 @@
 @import "./libs/bootstrap-reboot";
 @import "./libs/normalize";
-@import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Merienda+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=Merienda+One&display=swap');
 @import "./base/variables";
 * {
-    font-family: "Merienda One", cursive;
+    font-family: 'Merienda One', cursive;
 }
 
 .container {

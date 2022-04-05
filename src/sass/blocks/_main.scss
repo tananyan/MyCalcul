@@ -22,6 +22,8 @@
     gap: 5px;
     color: $font-color;
     text-align: center;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
     &_top {
       grid-row: 1/2;
       grid-column: 1/5;
@@ -68,11 +70,12 @@
   // top
   .top-num {
     grid-column: span 4;
-    background-color: $else-color;
+    background-color: $second-color;
   }
   .top-last-res {
     grid-column: span 3;
-    background-color: $second-color;
+    background-color: $else-color;
+    color: $black;
   }
   .top-operator {
     background-color: $else-color;
