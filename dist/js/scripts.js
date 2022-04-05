@@ -5,11 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const res = document.querySelector(".res");
   const clean = document.querySelector(".top-fun");
   const dispLay = document.querySelector(".top-num");
-  const operator = document.querySelector(".top-operator");
+  const dispLayRes = document.querySelector(".top-last-res");
   const plusMinus = document.querySelector(".fun-inv");
 
   numbers.forEach((num) => {
-    console.log("if false");
     num.addEventListener("click", () => {
       dispLay.innerHTML += num.innerHTML;
     });
@@ -17,9 +16,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
   funs.forEach((fun) => {
     fun.addEventListener("click", () => {
-      operator.innerHTML = fun.innerHTML;
+      switch (fun.innerHTML) {
+        case "x<sup>2</sup>":
+          dispLayRes.innerHTML = dispLay.innerHTML * dispLay.innerHTML;
+          break;
+        case "%":
+          break;
+        case "√x":
+          break;
+        case "÷":
+          dispLay.innerHTML += "/";
+          break;
+        case "×":
+          dispLay.innerHTML += "*";
+          break;
+        default:
+          break;
+      }
     });
   });
+
+  clean.addEventListener("click", () => {
+    dispLay.innerHTML = "";
+  });
+
+  // %
+  // √x
+  // ÷
+  // ×
+  // -
+  // +
+  // ∙
 
   // menuLink.forEach((item) => {
   //   item.addEventListener("click", () => {
