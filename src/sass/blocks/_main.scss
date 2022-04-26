@@ -50,6 +50,7 @@
     height: 30px;
     border-radius: 10px;
     border: 2px solid black;
+    font-size: 18px;
     line-height: 26px;
   }
   .grid-main-btn {
@@ -57,6 +58,7 @@
     height: 60px;
     border-radius: 15px;
     border: 2px solid black;
+    font-size: 24px;
     line-height: 56px;
     transition: 0.2s all;
     &:hover {
@@ -69,7 +71,7 @@
 
   // top
   .top-num {
-    grid-column: span 4;
+    grid-column: span 3;
     background-color: $second-color;
   }
   .top-last-res {
@@ -105,5 +107,8 @@
   .res {
     background-color: $main-color;
     user-select: none;
+  }
+  .green {
+    background-color: limegreen;
   }
 }
